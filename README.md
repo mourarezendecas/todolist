@@ -34,6 +34,12 @@ Na trilha 3 do kit 1 nos foi proposto o desenvolvimento de uma aplicação todo-
 
 ### Saídas no console: 
 
+
+## Sobre o Front-end 🖥️
+
+
+# Teconologias utilizadas 
+
 ## Front-end 
 #### Tecnologias usadas:
 ![HTML 5 Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
