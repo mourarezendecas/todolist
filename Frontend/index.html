@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+
+    <!-- Onde insiro as minhas tarefas -->
+    <div id="entrada_tarefas">
+        <h2>To-do List</h2>
+        <!-- Titulo da tarefa -->
+        <input type="text" id="entrada_titulo" placeholder="Titulo da tarefa">
+        <!-- Descrição da tarefa -->
+        <input type="text" id="entrada_descricao" placeholder="Descrição da tarefa">
+        <!-- Categoria da tarefa -->
+        <select id="entrada_categoria">
+            <option selected value="Selecione">Selecione a categoria</option>
+            <option value="Pessoal">Pessoal</option>
+            <option value="Academico">Acadêmico</option>
+            <option value="Profissional">Profissional</option>
+        </select>
+        <!-- Prioridade da tarefa -->
+        <select id="entrada_prioridade">
+            <option selected value="Selecione">Selecione a prioridade</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <!-- Alarme da tarefa -->
+
+        <button id="adicionar_tarefa">Adicionar</button>
+    </div>
+
+    <!-- Onde mostro minhas tarefas -->
+    <div id="display_Tarefas">
+        <ul id="lista_tarefas">
+
+        </ul>
+    </div>
+
+</body>
+</html>
+
+<script src="script.js"></script>

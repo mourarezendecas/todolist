@@ -1,0 +1,97 @@
+@startuml TODO-List 
+
+class Tarefa {
+  String descricao 
+  String status 
+  String nome
+  String categoria
+  int prioridade 
+  int idStatus
+  int idCat
+
+
+  String getNome()
+  void setNome()
+  String getDescricao()
+  void setDescricao()
+  String getStatus()
+  void setStatus(int)
+  int getPrioridade()
+  void setPrioridade()
+  String getCategoria()
+  void setCategoria(int)
+  Date getAlarme()
+  void setAlarme(Date)
+  void imprimeTarefa()
+}
+
+class CriaTarefa{
+    Date dataAlarme
+    Calendar C1
+    void adicionaTarefa()
+}
+
+class ListaTarefa{
+    ArrayList<Tarefas> tarefas
+    int todo 
+    int doing 
+    int done 
+    void adicionarTarefa(Tarefa)
+    void listarTarefas()
+    void listarTarefasPrioridade(int)
+    void listarStatus(int)
+    void listarCat(int)
+    void getStatus()
+    ArrayList<Tarefa> getTarefas()
+    void setTarefas(ArrayList<Tarefa>)
+}
+
+class UpdateStatus{
+    void updateStatus(ArrayList<Tarefa>, int)
+}
+
+class DeletaTarefa{
+    void deletaTarefa(ArrayList<Tarefa>)
+}
+
+
+class Application{
+    void main()
+    void iniciaApp()
+}
+
+note top of Application : Classe main
+note top of DeletaTarefa : Onde as tarefas são deletadas 
+note top of CriaTarefa : Onde as tarefas são criadas 
+note top of ListaTarefa : Uma lista de "Armazenamento" de tarefas, \n onde além de serem salvas, são disponibilizadas ao usuário 
+note top of UpdateStatus : Onde é feito o update das tarefas 
+
+Application --> CriaTarefa
+CriaTarefa --> Tarefa
+
+Note "A classe CriaTarefa instancia \n um objeto de tarefa" as N1 
+CriaTarefa .. N1
+N1 .. Tarefa
+
+CriaTarefa --> ListaTarefa
+Note "A classe CriaTarefa passa o \n objeto tarefa instanciado como parâmetro \n do método adicionarTarefas da classe ListaTarefas" as N2
+CriaTarefa .. N2
+N2 .. ListaTarefa
+
+Application --> ListaTarefa
+Note "Na opção de lista tarefas da classe Application \n podemos optar pelo tipo de listagem \n e cada uma implicará em um método diferente de ListaTarefa" as N3
+Application .. N3
+N3 .. ListaTarefa
+
+Application --> UpdateStatus
+Note "Nesta opção é passado \n a lista de tarefas \n e o indice do objeto \n a ser tratado" as N4
+Application .. N4
+N4 .. UpdateStatus
+
+UpdateStatus --> ListaTarefa
+Note "A classe UpdateStatus acessa \n a propriedade Status do objeto \n através do índice informado" as N5
+UpdateStatus .. N5
+N5 .. ListaTarefa
+
+
+@enduml
