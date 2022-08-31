@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    margin: 50px 100px;
+  }
+
+  .container {
+    display: flex;
+    gap: 50px;
+  }
+
+.entrada_tarefas{
+    text-align: center;
+    align-items: center;
+}
+
+#entrada_titulo{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#entrada_descricao{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#selecionadores{
+    border-radius: 5px;
+}
+
+#adicionar_tarefa{
+    width: 100%;
+    height: 30px;
+}
