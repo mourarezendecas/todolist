@@ -39,6 +39,8 @@ Na trilha 3 do kit 1 nos foi proposto o desenvolvimento de uma aplicação todo-
 
 Até então (31/08) foi feito um front-end simples de CRD das tarefas, porém respeitando a criação de instâncias da classe tarefa e as adicionando em uma Arraylist de tarefas. 
 
+Caso queira um preview: https://codepen.io/mourarezendecas/pen/zYjOdYz
+
 
 # Teconologias utilizadas 
 
