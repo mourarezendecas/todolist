@@ -1,6 +1,8 @@
 # <p align ="center"> Todo List </p>
 
-Projeto desenvolvido ao longo do programa Acelera ZG, promovido pela ZG Soluções, aonde nos foi proposto fazer uma TO-DO List (ou lista de afazeres) usando o java para o backend e HTML+CSS+JavaScript como front-end. 
+Projeto desenvolvido ao longo do programa Acelera ZG, promovido pela ZG Soluções, aonde nos foi proposto fazer uma TO-DO List (ou lista de afazeres) usando o java para o backend e HTML+CSS+JavaScript como front-end. <br>
+__Desenvolvido por: Gabriel Aguiar de C. M. Rezende__
+
 
 ## Sobre o backend ☕
 Na trilha 3 do kit 1 nos foi proposto o desenvolvimento de uma aplicação todo-list em Java. 
